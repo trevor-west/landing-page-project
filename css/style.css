@@ -94,6 +94,69 @@ header img.ohama {
 
 main {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 75px;
+  margin-bottom: 150px;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 55px;
+  padding: 5px 0px 50px 0px;
+}
+
+h2 .smaller {
+  font-size: 45px;
+}
+
+main .box-flex {
+  display: flex;
+  gap: 100px;
+  width: 100%;
+  justify-content: center;
+}
+
+.blue-box {
+  border: 5px solid #0100BA;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.box {
+ display: flex;
+ flex-flow: column;
+ align-items: center;
+}
+
+.box-flex .box p {
+  max-width: 300px;
+  text-align: center;
+  padding: 15px;
+}
+
+.blue-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.gray-border {
+  display: flex;
   align-items: center;
+  background-color: #B1B1B15C;
+  padding: 300px 0px;
+  flex-flow: column nowrap;
+}
+
+.gray-border q {
+  font-size: 60px;
+  max-width: 2000px;
+}
+
+.learn-more {
+  display: flex;
+  justify-content: center;
 }
