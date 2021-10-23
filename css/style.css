@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+nav img.logo {
+  height: 100px;
+  width: 100px;
+}
