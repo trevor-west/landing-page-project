@@ -1,14 +1,99 @@
-* {
+html, *, body {
+  font-family: Helvetica, sans-serif;
   margin: 0;
-  padding: 0;
-  font-family: "Times New Roman", Arial, sans-serif;
 }
 
 body {
   min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+}
+
+header {
+  background-color: #25232C;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  margin-top: 75px;
+  margin-right: 100px;
 }
 
 nav img.logo {
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 186px;
+  padding: 10px;
+  margin-left: 50px;
+}
+
+nav ul li {
+  font-size: 25px;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding-bottom: 175px;
+}
+
+header img.ohama {
+  height: 350px;
+  width: 660px;
+}
+
+.content {
+  max-width: 800px;
+}
+.content h1 {
+  font-size: 100px;
+}
+
+.smaller {
+  font-size: 60px;
+}
+
+.shorter-lines {
+  line-height: 0.75;
+  margin-top: 15px;
+}
+
+.content p {
+  font-size: 25px;
+  color: #DEDEDE;
+}
+
+.content button {
+  color: white;
+  background-color: blue;
+  padding: 10px 20px;
+  font-size: 25px;
+  border-radius: 15px;
+  text-decoration: none;
+  border: none;
+  font-weight: 900;
+  margin-top: 20px;
+}
+
+main {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 }
