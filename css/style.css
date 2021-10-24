@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  background-color: #25232C;
+  background-color: #1F2937;
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -34,6 +34,19 @@ ul {
   gap: 30px;
   margin-top: 75px;
   margin-right: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 35px;
 }
 
 nav img.logo {
@@ -68,10 +81,17 @@ header img.ohama {
 }
 .content h1 {
   font-size: 100px;
+  color: #F9FAF8;
+  font-weight: 900;
 }
 
 .smaller {
   font-size: 60px;
+  color: #E5E7EB;
+}
+
+main h2 .smaller {
+  color: #1F2937;
 }
 
 .shorter-lines {
@@ -80,13 +100,10 @@ header img.ohama {
 }
 
 .content p {
-  font-size: 25px;
-  color: #DEDEDE;
+  color: #E5E7EB;
 }
 
 .content button {
-  color: white;
-  background-color: blue;
   padding: 10px 20px;
   font-size: 25px;
   border-radius: 15px;
@@ -116,8 +133,8 @@ h2 .smaller {
 
 main .box-flex {
   display: flex;
-  gap: 100px;
   width: 100%;
+  gap: 75px;
   justify-content: center;
   flex-flow: row wrap;
 }
@@ -151,24 +168,70 @@ main .box-flex {
 .gray-border {
   display: flex;
   align-items: center;
-  background-color: #B1B1B15C;
+  background-color: #E5E7EB;
   padding: 100px 0px;
   flex-flow: column nowrap;
 }
 
 .gray-border q {
+  color: #1F2937;
   font-size: 60px;
   max-width: 2000px;
   padding: 50px;
 }
 
 .gray-border cite {
+  color: #1F2937;
+  font-weight: 100;
   font-size: 40px;
 }
 
 .gray-border p {
+  color: #1F2937;
+  font-weight: 100;
   font-size: 20px;
   text-align: center;
+}
+
+.white-border {
+  background-color: white;
+  padding: 100px 0px;
+}
+
+.access-section {
+  display: flex;
+  padding: 100px;
+  background-color: #1F2937;
+  color: white;
+}
+
+.access-section .access-info {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.access-info h3, .access-info p {
+  padding: 15px;
+}
+
+.access-info p {
+  max-width: 2000px;
+}
+
+.access-info a{
+  text-decoration: underline;
+}
+
+.access-info .access-img-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.access-img-flex img {
+  width: 30%;
+  height: auto;
+  padding: 10px;
 }
 
 .learn-more {
@@ -177,35 +240,34 @@ main .box-flex {
 }
 
 .learn-more .call-to-action {
+  background-color: #3882F6;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   border-radius: 10px;
-  background-color: #0066ff;
   padding: 75px 100px;
   min-width: 250px;
-  margin: auto 100px;
 }
 
 .learn-more .call-to-action .cta-content {
   color: white;
-  flex: 1;
-  margin-left: 100px;
 }
 
 .cta-content h3 {
   font-weight: 900;
-  font-size: 35px;
 }
 
 .cta-content p {
   font-size: 25px;
-  color: #DEDEDE;
+  color: #E5E7EB;
+}
+
+button {
+  background-color: #3882F6;
+  color: #F9FAF8;
 }
 
 .learn-more button {
-  color: #f2f2f2;
-  background-color: #005ce6;
   padding: 15px 30px;
   font-size: 25px;
   border-radius: 10px;
@@ -217,7 +279,27 @@ main .box-flex {
   margin-right: 100px;
 }
 
-a {
+div.top-button-flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+button.top-button {
+  padding: 15px 30px;
+  font-size: 25px;
+  border-radius: 10px;
   text-decoration: none;
-  color: inherit;
+  border: 2px solid white;
+  font-weight: 300;
+}
+
+footer {
+  display: flex;
+  background-color: #25232C;
+  color: white;
+  padding: 50px;
+  align-items: center;
+  flex-flow: column nowrap;
 }
