@@ -52,15 +52,19 @@ nav ul li {
   justify-content: center;
   gap: 100px;
   padding-bottom: 175px;
+  flex-flow: row wrap;
 }
 
 header img.ohama {
   height: 350px;
   width: 660px;
+  max-width: 100%;
+  flex-grow: 0 1 auto;
 }
 
 .content {
   max-width: 800px;
+  flex-grow: 1;
 }
 .content h1 {
   font-size: 100px;
@@ -115,6 +119,7 @@ main .box-flex {
   gap: 100px;
   width: 100%;
   justify-content: center;
+  flex-flow: row wrap;
 }
 
 .blue-box {
@@ -147,16 +152,72 @@ main .box-flex {
   display: flex;
   align-items: center;
   background-color: #B1B1B15C;
-  padding: 300px 0px;
+  padding: 100px 0px;
   flex-flow: column nowrap;
 }
 
 .gray-border q {
   font-size: 60px;
   max-width: 2000px;
+  padding: 50px;
+}
+
+.gray-border cite {
+  font-size: 40px;
+}
+
+.gray-border p {
+  font-size: 20px;
+  text-align: center;
 }
 
 .learn-more {
+  background-color: white;
+  padding: 150px;
+}
+
+.learn-more .call-to-action {
   display: flex;
-  justify-content: center;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: #0066ff;
+  padding: 75px 100px;
+  min-width: 250px;
+  margin: auto 100px;
+}
+
+.learn-more .call-to-action .cta-content {
+  color: white;
+  flex: 1;
+  margin-left: 100px;
+}
+
+.cta-content h3 {
+  font-weight: 900;
+  font-size: 35px;
+}
+
+.cta-content p {
+  font-size: 25px;
+  color: #DEDEDE;
+}
+
+.learn-more button {
+  color: #f2f2f2;
+  background-color: #005ce6;
+  padding: 15px 30px;
+  font-size: 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 2px solid white;
+  font-weight: 900;
+  max-height: 100px;
+  flex: 0 1 auto;
+  margin-right: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
